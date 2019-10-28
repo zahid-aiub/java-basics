@@ -9,7 +9,8 @@ package thread;
 class Hi extends Thread {
 
 	public void run() {
-		for (int i = 0; i < 6; i++) {
+		for (int i = 0; i < 6; i++) 
+		{
 			System.out.println("Hi");
 			try {
 				Thread.sleep(500);
@@ -23,7 +24,8 @@ class Hi extends Thread {
 class Hello extends Thread {
 
 	public void run() {
-		for (int i = 0; i < 6; i++) {
+		for (int i = 0; i < 6; i++) 
+		{
 			System.out.println("Hello");
 			try {
 				Thread.sleep(500);
