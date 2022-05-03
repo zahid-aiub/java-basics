@@ -2,7 +2,7 @@ package abstractInterface;
 
 
 class Base {
-	private void foo() {
+	public void foo() {
 		System.out.println("Base");
 	}
 }
@@ -10,6 +10,7 @@ class Base {
 class Derived extends Base {
 
 	// works fine
+	@Override
 	public void foo() {
 		System.out.println("Derived");
 	}
@@ -17,7 +18,8 @@ class Derived extends Base {
 
 public class Main {
 	public static void main(String args[]) {
-		Derived d = new Derived();
-		d.foo();
+		Base d = new Derived();
+		d.foo();     // Run-time polymorphism
+
 	}
 }
