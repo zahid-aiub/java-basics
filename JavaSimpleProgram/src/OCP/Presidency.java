@@ -1,6 +1,6 @@
 package OCP;
 
-public class Presedency {
+public class Presidency {
     public void m() {
         System.out.println("In class Presedency");
     }
@@ -16,7 +16,7 @@ interface B {
     }
 }
 
-class Main extends Presedency implements B {
+class Main extends Presidency implements B {
     public static void main(String[] args) {
 
     }

@@ -12,7 +12,7 @@ public class TMap {
         map.put(null, null);
         map.put(null, 56);
 
-        System.out.println(map.get(null));
+        System.out.println(map.get("abc"));
 
     }
 }
